@@ -12,3 +12,8 @@ venv/
 spark-warehouse/
 metastore_db/
 derby.log
+.Rhistory
+.sf/
+.sfdx/
+artifacts/
+.runtime/
