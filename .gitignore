@@ -17,3 +17,5 @@ derby.log
 .sfdx/
 artifacts/
 .runtime/
+
+.vscode/
