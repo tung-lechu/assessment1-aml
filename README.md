@@ -29,9 +29,9 @@ The direct dependencies are pinned in `requirements.txt`. Transitive dependency 
 
 Install a Java 17 JDK for your operating system from [Eclipse Adoptium](https://adoptium.net/temurin/releases/?version=17), and set `JAVA_HOME` to its installation directory if necessary.
 
-On this Apple Silicon Mac, the verified project-local runtime is Temurin 17.0.20.1+1 in `.runtime/jdk-17.0.20.1+1/Contents/Home`. It was downloaded from the official Adoptium release and checked against the publisher's SHA-256 checksum. The kernel registration below configures this location. The runtime is not committed to Git.
+On this Apple Silicon Mac, the verified runtime stored in this project is Temurin 17.0.20.1+1 in `.runtime/jdk-17.0.20.1+1/Contents/Home`. It was downloaded from the official Adoptium release and checked against the publisher's SHA-256 checksum. The kernel registration below configures this location. The runtime is not committed to Git.
 
-A project-local copy on another Apple Silicon Mac can be prepared with:
+To install a copy inside this project on another Apple Silicon Mac, run:
 
 ```sh
 mkdir -p .runtime
@@ -54,7 +54,7 @@ After installing Python dependencies and Java, register the kernel. On this Mac,
   --env PYSPARK_SUBMIT_ARGS "--driver-memory 4g pyspark-shell"
 ```
 
-This keeps machine-specific configuration outside the notebook. Re-register the kernel if the project folder moves. Restart the notebook kernel after changing its configuration.
+This keeps configuration specific to your computer outside the notebook. Register the kernel again if the project folder moves. Restart the notebook kernel after changing its configuration.
 
 ### Open and run
 
