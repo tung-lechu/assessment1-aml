@@ -64,3 +64,6 @@ This keeps configuration specific to your computer outside the notebook. Registe
 4. Open `assessment1.ipynb` and select **Python (assessment1-aml)** from the registered Jupyter kernels (not a generic Python environment).
 5. Use **Restart Kernel and Run All**.
 
+## AI assistance acknowledgement
+
+OpenAI [ChatGPT](https://chatgpt.com/) and [Codex](https://openai.com/codex/) were used to brainstorm and compare analytical approaches, generate and revise Python and Spark SQL code, troubleshoot the environment, run validation and performance checks, and draft and revise documentation and written analysis.
